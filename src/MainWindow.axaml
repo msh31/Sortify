@@ -1,0 +1,63 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="500"
+        x:Class="src.MainWindow"
+        Title="Sortify"
+        Width="700" Height="500"
+        Background="#1e1e1e"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Browse button and folder text -->
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="browseButton">
+                Browse Folder
+            </Button>
+            <TextBlock x:Name="directoryText"
+                       VerticalAlignment="Center"
+                       Foreground="White" />
+        </StackPanel>
+
+        <!-- Image count -->
+        <TextBlock x:Name="imageCountText"
+                   Grid.Row="1"
+                   Margin="0,2"
+                   HorizontalAlignment="Right"
+                   Foreground="White" />
+
+        <!-- Image display -->
+        <Image x:Name="imageDisplay"
+               Grid.Row="2"
+               Margin="0,8"
+               Stretch="Uniform" />
+
+        <!-- keep and delete buttons -->
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Spacing="20"
+                    Margin="0,8,0,0">
+            <Button x:Name="keepButton"
+                    IsEnabled="False"
+                    Width="80"
+                    Background="Green">
+                Keep
+            </Button>
+            <Button x:Name="deleteButton"
+                    IsEnabled="False"
+                    Width="80"
+                    Background="DarkRed">
+                Delete
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
