@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src\src.csproj", "{A62534AA-6BA4-4D66-A0D9-7E876FB30B8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sortifyApp", "src\sortifyApp.csproj", "{A62534AA-6BA4-4D66-A0D9-7E876FB30B8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

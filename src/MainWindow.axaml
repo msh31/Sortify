@@ -3,7 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="500"
-        x:Class="src.MainWindow"
+        x:Class="sortifyApp.MainWindow"
         Title="Sortify"
         Width="700" Height="500"
         Background="#1e1e1e"

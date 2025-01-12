@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace src;
+namespace sortifyApp;
 
 public partial class MainWindow : Window
 {

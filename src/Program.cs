@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace src;
+namespace sortifyApp;
 
 class Program
 {
