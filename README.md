@@ -17,7 +17,7 @@
 
 ## How to Use 📝
 1. **Browse**: Click the "Browse" button to choose a directory containing photos
-2. **Keep**: If you want to keep a photo, click the "Keep" button
+2. **Keep**: If you want to keep a photo, click the "Keep" button (Saved to "Saved Photos" folder wherever the exe is located.)
 3. **Delete**: If you want to remove a photo, click the "Delete" button
 
 The app will show you each photo in the directory one by one, making sorting a breeze.
