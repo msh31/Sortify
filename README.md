@@ -9,6 +9,12 @@
   <img src="https://i.imgur.com/rPQuBUf.gif" alt="Sortify GIF">
 </p>
 
+# TODO
+- add filename and info about the picture
+- increase button size when the app is maximized
+- auto rotate vertical photos
+- add sorting options
+
 ## How to Use 📝
 1. **Browse**: Click the "Browse" button to choose a directory containing photos
 2. **Keep**: If you want to keep a photo, click the "Keep" button
