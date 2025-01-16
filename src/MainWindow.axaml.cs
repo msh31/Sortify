@@ -1,3 +1,4 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Media.Imaging;
@@ -14,10 +15,15 @@ public partial class MainWindow : Window
     private string[] imageTypes = { ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".heic" };
     private TextBlock folderText;
     private TextBlock countText;
+    private string savedPicFolder = Path.Combine(Directory.GetCurrentDirectory())  + "\\Saved Photos";
 
     public MainWindow()
     {
         InitializeComponent();
+        
+        if (!Directory.Exists(savedPicFolder))
+            Directory.CreateDirectory(savedPicFolder);
+        
         folderText = this.FindControl<TextBlock>("directoryText");
         countText = this.FindControl<TextBlock>("imageCountText");
     }
@@ -80,7 +86,17 @@ public partial class MainWindow : Window
 
     private void OnKeepClick(object sender, RoutedEventArgs e)
     {
-        LoadNextPicture();
+        if (currentImage != null)
+        {
+            try
+            {
+                imageDisplay.Source = null;
+                File.Move(currentImage, Path.Combine(savedPicFolder, Path.GetFileName(currentImage)));
+            }
+            catch
+            {
+            }
+        }
     }
 
     private void OnDeleteClick(object sender, RoutedEventArgs e)
