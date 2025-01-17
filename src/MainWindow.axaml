@@ -26,6 +26,10 @@
             <TextBlock x:Name="directoryText"
                        VerticalAlignment="Center"
                        Foreground="White" />
+            <TextBlock x:Name="filenameText"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"
+                       Foreground="White" />
         </StackPanel>
 
         <!-- Image count -->

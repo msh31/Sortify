@@ -26,6 +26,7 @@ public partial class MainWindow : Window
         
         folderText = this.FindControl<TextBlock>("directoryText");
         countText = this.FindControl<TextBlock>("imageCountText");
+        filenameText = this.FindControl<TextBlock>("filenameText");
     }
 
     private async void OnBrowseClick(object sender, RoutedEventArgs e)
@@ -53,6 +54,7 @@ public partial class MainWindow : Window
 
             folderText.Text = Path.GetFileName(folder);
             countText.Text = "Total: " + images.Count;
+            
             LoadNextPicture();
         }
     }
@@ -69,6 +71,7 @@ public partial class MainWindow : Window
                 keepButton.IsEnabled = true;
                 deleteButton.IsEnabled = true;
                 countText.Text = "Images remaining: " + images.Count;
+                filenameText.Text = Path.GetFileName(currentImage);
             }
             catch
             {
